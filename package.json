@@ -1,0 +1,25 @@
+{
+  "name": "android-get-version-name-action",
+  "version": "1.0.0",
+  "description": "Gets Android Version Name from build.gradle file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigoarias/android-get-version-name-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigoarias/android-get-version-name-action/issues"
+  },
+  "homepage": "https://github.com/rodrigoarias/android-get-version-name-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@actions/github": "^5.0.3",
+    "gradle-to-js": "^2.0.1"
+  }
+}

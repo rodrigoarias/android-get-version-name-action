@@ -1,0 +1,16 @@
+name: 'Get Android version name'
+description: 'Gets version name from build.gradle file'
+inputs:
+  git-token:
+    description: 'Token to add changelog file'
+    required: true
+  gradle-path:
+    description: 'The name of the changelog file committer'
+    required: false
+    default: 'app/build.gradle'
+outputs:
+  versionName: # id of output
+    description: 'The app version name'
+runs:
+  using: 'node16'
+  main: 'index.js'
