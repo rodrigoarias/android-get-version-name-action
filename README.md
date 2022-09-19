@@ -27,7 +27,16 @@ The path of the build.gradle file with the versionName. Default: `"app/build.gra
 The Android app version name
 
 ## Example usage
-
-uses: rodrigoarias/android-get-version-name-action@v1.0.0
-with:
-  git-token: ${{ secrets.GITHUB_TOKEN }}
+```
+    # Get Name
+    - name: Get Name
+      id: version
+      uses: rodrigoarias/android-get-version-name-action@v1.0.0
+      with:
+        git-token: ${{ secrets.RELEASE_GITHUB_KEY }}
+    
+    # create dir 
+    - name: Print version
+      run: echo "The version is ${{ steps.version.outputs.versionName }}"
+      
+```
