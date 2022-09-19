@@ -10,7 +10,7 @@ const main = async (workspace) => {
 	const owner = github.context.payload.repository.owner.login
 	const repo = github.context.payload.repository.name
 
-	const manifest = await findFile(octokit, owner, repo, versionName);
+	const manifest = await findFile(octokit, owner, repo, gradlePath);
 	const buff = Buffer.from(manifest.content, 'base64');
   const content = buff.toString('ascii');
 
