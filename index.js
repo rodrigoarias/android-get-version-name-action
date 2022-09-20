@@ -16,8 +16,11 @@ const main = async (workspace) => {
 
   g2js.parseText(content).then(function(representation) {
     var version = representation.android.defaultConfig.versionName;
+    var versionCode = representation.android.defaultConfig.versionCode;
     console.log(`Version name detected: ${version}`);
+    console.log(`Version code detected: ${versionCode}`);
     core.setOutput("versionName", version);
+    core.setOutput("versionCode", versionCode);
   });
 }
 
