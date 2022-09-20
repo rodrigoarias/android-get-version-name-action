@@ -11,6 +11,8 @@ inputs:
 outputs:
   versionName: # id of output
     description: 'The app version name'
+  versionCode:
+    description: 'The app version code'
 runs:
   using: 'node16'
   main: 'index.js'
